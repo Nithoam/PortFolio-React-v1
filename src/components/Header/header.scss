@@ -1,0 +1,71 @@
+@use '../App/_vars.scss';
+.buttons{
+  position: absolute;
+  top:-0.5rem;
+  left:0
+}
+.button{
+  margin-right:0.2rem;
+  padding:auto;
+  height:1.5rem;
+  width:1.5rem;
+  border-radius: 50%;
+  background-color:vars.$cream;
+
+  &-pushed{
+    background-color: lightgray;
+  }
+}
+.button svg, .button-pushed svg {
+  margin:-0.1rem -0.5rem;
+}
+
+.header {
+  display:flex;
+  justify-content: space-around;
+  text-align:center;
+  align-items: center;
+  padding-bottom:1rem;
+  min-height:10vh;
+  width:100%;
+  &__logo{ /* Logo N */   /* ! penser à l'eclipse => orange */
+    font-size:2em;
+    position: relative;
+    padding:1.5em 1em;
+    width:3em;
+    height:3em;
+    background-image: url('./moon.svg');
+    border-radius:50%;
+    box-shadow: 5px 5px 20px lightgrey;
+  }
+}
+.monoton-letters{
+  font-family: 'Monoton', sans-serif;
+}
+.logo__circle{
+  position: relative;
+  top:-0.5em
+}
+.name, .job {
+  display:block;
+  width:33%;
+}
+.name{
+  font-size:1.45rem;
+    @media (min-width:600px) {
+      font-size: 1.6rem;
+    }
+    @media (min-width:1000px) {
+      font-size: 2rem;
+    }
+}
+.job{
+  font-size:1rem;
+  @media (min-width:600px) {
+    font-size: 1.4rem;
+  }
+  @media (min-width:1000px) {
+    font-size: 1.8rem;
+  }
+}
+

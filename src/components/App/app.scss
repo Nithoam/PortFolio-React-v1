@@ -1,0 +1,13 @@
+@use '../App/_vars.scss';
+.app {
+  position: relative;
+  max-width:1000px;
+  margin:1rem;
+    @media (min-width:1000px) {
+      margin:1rem auto;
+    }
+}
+hr{
+  border: solid 1px rgb(227, 240, 233);
+  margin:1rem auto
+}

@@ -1,0 +1,13 @@
+.faq{
+  margin:2rem auto;
+  text-align: center;
+  &-question{
+    margin:0.7rem auto;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 1.2rem;
+  }
+  &-answer{
+
+  }
+}

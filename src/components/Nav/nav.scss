@@ -1,0 +1,59 @@
+@use '../App/_vars.scss';
+.nav {
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top:0.8em;
+}
+.nav__link {
+  display: inline-block;
+  transition: color 250ms, text-shadow 250ms;
+  text-decoration: none;
+  position: relative;
+  z-index: 0;
+  font-size:0.8rem;
+
+  @media (min-width:600px) {
+    font-size:1rem;
+  }
+  @media (min-width:600px) {
+    font-size:1.3rem;
+  }
+
+  &--selected{
+    background-color: vars.$cream;
+    color: vars.$midnight;
+    border: vars.$cream 0.5mm ridge;
+    border-radius: 3px;
+    padding:0.1em;
+    &::after{
+      display:none;
+    }
+  }
+
+  &::after { // trait sous la nav
+    position: absolute;
+    z-index: -1;
+    bottom: -0.1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: vars.$cream;
+    transition: all 250ms;
+  }
+
+  &:hover {
+    color: vars.$midnight;
+    
+    &::after { // taille de l'element blanc au hover
+      border-radius: 3px 3px 0 0;
+      height: 150%;
+      width: 105%;
+    }
+    
+  }
+  
+  
+}
