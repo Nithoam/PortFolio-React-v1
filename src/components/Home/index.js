@@ -1,11 +1,12 @@
 import React from 'react';
-
+// import  photo  from './photo.jpg'
 import './home.scss';
 
 const Home = () => (
   <div className="home main-composant">
-    <h2 className="home-welcome">Bienvenu sur mon portFolio</h2>
-    <p className="home-search"> Je suis actuellement à la recherche d'un CDI ou d'une alternance pour le mois d'Octobre, en région Parisienne </p>
+    <h2 className="home-welcome"><span className="b">B</span>ienvenue sur mon portfolio</h2>
+    <div className="home-border-picture"></div>
+    <p className="home-search"> </p>
   </div>
 );
 

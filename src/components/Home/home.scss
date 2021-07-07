@@ -1,5 +1,17 @@
 .home{
     &-welcome{
-        margin:1rem auto
+        margin:3rem auto;
+        font-size:1.3rem;
+        font-weight: bold;
     }
+    &-border-picture{
+        border: 3px solid white;
+        border-radius: 0 50% 50% 50%;
+        background: url('./photo.jpg') no-repeat center center ;
+        width:200px;
+        height:200px;
+    }
+}
+.b{
+    font-family: 'Festive', cursive;
 }

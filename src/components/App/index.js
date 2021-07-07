@@ -39,12 +39,22 @@ const App = () => {
   const snowing = () =>{
     setSnow(!snow)
   };
+/*
+  const sunning = () =>{
+    setSun(!sun)
+  };
+*/
+  const cursor = document.querySelector('.cursor');
+
+  document.addEventListener('mousemove', e => {
+      cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
+  })
 
   return(
     <>
     {snow && <Snow />}
     <div className="app">
-      <Header snow={snow} snowing={snowing} />
+      <Header snow={snow} snowing={snowing} /* sun={sun} sunning={sunning} */ />
       <Nav />
       <Switch>
         <Route path="/" exact><Home /></Route>

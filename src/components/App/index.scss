@@ -5,13 +5,29 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;   
 }
+.cursor{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  pointer-events: none;
+}
+.cursor::before {
+  content: url('./snowflake-icon.png');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+}
 body {
   min-width: 320px;
   width:99vw;
   font-family: sans-serif;
   background: vars.$midnight;
   color: vars.$cream;
-  overflow-x :hidden
+  overflow-x :hidden;
+  cursor: none;
+  
 }
 .main-composant{
   display:flex;
