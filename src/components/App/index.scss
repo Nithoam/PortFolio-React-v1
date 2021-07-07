@@ -13,7 +13,21 @@ body {
   color: vars.$cream;
   overflow-x :hidden
 }
-
+.main-composant{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  text-align: center;
+  min-height:60vh;
+  @media (min-width:600px){
+      margin:4rem auto;
+      min-height:40vh;
+  }
+  @media (min-width:1000px){
+      margin:5rem auto;
+  }
+}
 /* 
   // or you can import your own font
   @font-face {

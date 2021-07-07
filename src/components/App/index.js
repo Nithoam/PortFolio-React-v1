@@ -6,6 +6,7 @@ import { Switch, Route } from 'react-router-dom';
 // == Import
 import Snow from '../Snow';
 import Header from '../Header';
+import Home from '../Home';
 import Nav from '../Nav';
 import Footer from '../Footer';
 import Formations from '../Formations';
@@ -46,7 +47,7 @@ const App = () => {
       <Header snow={snow} snowing={snowing} />
       <Nav />
       <Switch>
-        <Route path="/" exact>Home</Route>
+        <Route path="/" exact><Home /></Route>
         <Route path="/competences" exact>Compétences</Route>
         <Route path="/formations" exact><Formations /></Route>
         <Route path="/experiences" exact>Expériences</Route>
