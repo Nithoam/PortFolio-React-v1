@@ -1,0 +1,10 @@
+.sources, .sources-element{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.sources-element{
+  width:150px;
+  margin: 2rem auto;
+}

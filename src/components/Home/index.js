@@ -7,7 +7,7 @@ const Home = () => (
     <div className="home-welcome">
     <Typewriter
       onInit={(typewriter) => {
-        typewriter.typeString('<span class="b">C</span>here visiteuse, cher visiteur')
+        typewriter.typeString('<span class="b">C</span>hère visiteuse, cher visiteur')
           .pauseFor(1000)
           .deleteAll()
           .typeString('<span class="b">B</span>ienvenue !')
