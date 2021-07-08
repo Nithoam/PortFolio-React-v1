@@ -1,10 +1,21 @@
 import React from 'react';
-// import  photo  from './photo.jpg'
+import Typewriter from 'typewriter-effect';
 import './home.scss';
 
 const Home = () => (
   <div className="home main-component">
-    <h2 className="home-welcome"><span className="b">B</span>ienvenue et bonne visite</h2>
+    <div className="home-welcome">
+    <Typewriter
+      onInit={(typewriter) => {
+        typewriter.typeString('Bienvenue chez moi !')
+          .deleteChars(10)
+          .typeString('chez vous ! ')
+          .deleteChars(12)
+          .typeString('chez NOUS ! ')
+          .start();
+      }}
+    />
+    </div>
     <div className="home-border-picture"></div>
     <p className="home-search"> </p>
   </div>
