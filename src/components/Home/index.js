@@ -7,11 +7,10 @@ const Home = () => (
     <div className="home-welcome">
     <Typewriter
       onInit={(typewriter) => {
-        typewriter.typeString('Bienvenue chez moi !')
-          .deleteChars(10)
-          .typeString('chez vous ! ')
-          .deleteChars(12)
-          .typeString('chez NOUS ! ')
+        typewriter.typeString('<span class="b">C</span>here visiteuse, cher visiteur')
+          .pauseFor(1000)
+          .deleteAll()
+          .typeString('<span class="b">B</span>ienvenue !')
           .start();
       }}
     />

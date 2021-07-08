@@ -1,7 +1,14 @@
 .home{
     &-welcome{
-        font-size:1.5rem;
+        font-size:1.4rem;
         font-weight: bold;
+        @media (min-width:600px) {
+            font-size:1.8rem;
+        }
+        @media (min-width:1000px) {
+            font-size:2rem;
+        }
+        
     }
     &-border-picture{
         margin:1rem auto;
@@ -10,12 +17,9 @@
         background: url('./photo.jpg') no-repeat center center ;
         width:200px;
         height:200px;
-        /*
-        &:hover{
-            transform: scale(250%);
-            transition-duration:2s
+        @media (min-width:600px) {
+            margin:3rem auto;
         }
-        */
     }
 }
 .b{
