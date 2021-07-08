@@ -3,7 +3,8 @@
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
-          box-sizing: border-box;   
+          box-sizing: border-box;
+  cursor: none;
 }
 .cursor{
   width: 40px;
@@ -25,23 +26,22 @@ body {
   font-family: sans-serif;
   background: vars.$midnight;
   color: vars.$cream;
-  overflow-x :hidden;
-  cursor: none;
-  
+  overflow-x: hidden;
 }
-.main-composant{
+.main-component{
   display:flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
   text-align: center;
-  min-height:60vh;
+  min-height:55vh;
   @media (min-width:600px){
-      margin:4rem auto;
-      min-height:40vh;
+    margin:4rem auto;
+    min-height:50vh;
   }
   @media (min-width:1000px){
-      margin:5rem auto;
+    margin:5rem auto;
+    min-height:45vh;
   }
 }
 /* 

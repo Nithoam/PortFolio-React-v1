@@ -3,7 +3,7 @@ import React from 'react';
 import './formations.scss';
 
 const Formations = () => (
-  <div className="formations main-composant">
+  <div className="formations main-component">
     <div className="formation">
       <h2 className="formations-title">2021 - Formation Développeur web</h2>
       <h3 className="formations-subtitle">O’clock, Labellisée Grand Ecole du Numérique</h3>

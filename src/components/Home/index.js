@@ -3,8 +3,8 @@ import React from 'react';
 import './home.scss';
 
 const Home = () => (
-  <div className="home main-composant">
-    <h2 className="home-welcome"><span className="b">B</span>ienvenue sur mon portfolio</h2>
+  <div className="home main-component">
+    <h2 className="home-welcome"><span className="b">B</span>ienvenue et bonne visite</h2>
     <div className="home-border-picture"></div>
     <p className="home-search"> </p>
   </div>

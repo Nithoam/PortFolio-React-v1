@@ -66,12 +66,12 @@ const Snow = () => {
         <ellipse cx="1050" cy="598.5" rx="2" rx="1.3"/>
         <ellipse cx="826" cy="175.5" rx="2" rx="1.3"/>
         <ellipse cx="626" cy="286.5" rx="2" rx="1.3"/>
-        <ellipse cx="887" cy="598.5" rx="2" rx="1.3"/>
-        <ellipse cx="887" cy="598.5" rx="2" rx="1.3"/>
-        <ellipse cx="887" cy="598.5" rx="2" rx="1.3"/>
+        <ellipse cx="903" cy="552.5" rx="2" rx="1.3"/>
+        <ellipse cx="800" cy="585.5" rx="2" rx="1.3"/>
+        <ellipse cx="880" cy="584.5" rx="2" rx="1.3"/>
         <ellipse cx="1050" cy="598.5" rx="2" rx="1.3"/>
         <ellipse cx="887" cy="598.5" rx="2" rx="1.3"/>
-        <ellipse cx="887" cy="598.5" rx="2" rx="1.3"/>
+        <ellipse cx="889" cy="598.5" rx="2" rx="1.3"/>
       </g>
       </g>
       <g fill="#FFF" fillOpacity=".3" transform="translate(65 63)">

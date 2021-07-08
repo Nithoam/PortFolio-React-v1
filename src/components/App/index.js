@@ -10,22 +10,28 @@ import Home from '../Home';
 import Nav from '../Nav';
 import Footer from '../Footer';
 import Formations from '../Formations';
+import Experiences from '../Experiences';
+import Skills from '../Skills';
 import Faq from '../Faq';
 import NotFound from '../NotFound';
+import Projets from '../Projets';
 import './_reset.css';
 import './app.scss';
 import './index.scss';
+import './app.js'
 
 // ok : S'occuper de la nav selected
-// ok: Chercher un effet neige (ou etoiles) pour le background
+// ok : Chercher un effet neige (ou etoiles) pour le background
 
+// TODO : S'occuper de la home
 // TODO : S'occuper des paragraphe du composants Formations
-// TODO : S'occuper de la fonction random ET du tableau de la page Not Found
 // TODO : S'occuper de créer une barre rouge lorsque la fonction est désactivée
 
 //! Incompatible avec Switch ? :  slideroute (https://github.com/nanxiaobei/react-slide-routes)
-//TODO : import caroussel (https://github.com/sag1v/react-elastic-carousel) + utilisation du caroussel dans les composants
+// TODO : import caroussel (https://github.com/sag1v/react-elastic-carousel) + utilisation du caroussel dans les composants
+// TODO : S'occuper de la fonction random ET du tableau de la page Not Found
 
+// TODO : Enlever le curseur sur mobile
 
 // ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
 
@@ -44,11 +50,7 @@ const App = () => {
     setSun(!sun)
   };
 */
-  const cursor = document.querySelector('.cursor');
-
-  document.addEventListener('mousemove', e => {
-      cursor.setAttribute('style', 'top:'+(e.pageY - 20)+"px; left:"+(e.pageX - 20)+"px;")
-  })
+  
 
   return(
     <>
@@ -58,10 +60,10 @@ const App = () => {
       <Nav />
       <Switch>
         <Route path="/" exact><Home /></Route>
-        <Route path="/competences" exact>Compétences</Route>
+        <Route path="/competences" exact><Skills /></Route>
         <Route path="/formations" exact><Formations /></Route>
-        <Route path="/experiences" exact>Expériences</Route>
-        <Route path="/projets" exact>Projets</Route>
+        <Route path="/experiences" exact><Experiences /></Route>
+        <Route path="/projets" exact><Projets /></Route>
         <Route path="/faq" exact><Faq/></Route>
         <Route><NotFound/></Route>
       </Switch>
