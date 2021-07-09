@@ -1,7 +1,7 @@
 // == Import npm
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom';
-// import SlideRoutes from 'react-slide-routes';
+
 
 // == Import
 import Snow from '../Snow';
@@ -24,18 +24,16 @@ import './app.js'
 // ok : Chercher un effet neige (ou etoiles) pour le background
 // ok : S'occuper de la home
 
-// TODO : S'occuper des paragraphe du composants Formations
-// TODO : S'occuper de créer une barre rouge lorsque la fonction est désactivée
+// TODO : Composants Expériences et Compétences
+// TODO : Header : créer une barre rouge lorsque la fonction est désactivée
+// TODO : Composant Projets : import caroussel (https://github.com/sag1v/react-elastic-carousel) 
 
-// TODO : Importer une photo de github et réactiver Sources (ainsi que son icone de lien dans le footer)
-// TODO : Créer un composant About
+// TODO : Composant Sources : Importer une photo de github et réactiver Sources (ainsi que son icone de lien dans le footer)
+// TODO : Composant About: Créer un composant About et modifier le lien dans la page Home
 
-//! Incompatible avec Switch ? :  slideroute (https://github.com/nanxiaobei/react-slide-routes)
-// TODO : import caroussel (https://github.com/sag1v/react-elastic-carousel) + utilisation du caroussel dans les composants
-
-// TODO : Reactiver la fonction Sun avec le theme light
-// TODO : Enlever le curseur sur mobile
-// TODO : S'occuper de la fonction random ET du tableau de la page Not Found
+// TODO : App : Reactiver la fonction Sun avec le theme light
+// TODO : App : Enlever le curseur sur mobile
+// TODO : Composant NotFound : S'occuper de la fonction random ET du tableau de la page Not Found
 
 // ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
 
@@ -69,7 +67,7 @@ const App = () => {
         <Route path="/experiences" exact><Experiences /></Route>
         <Route path="/projets" exact><Projets /></Route>
         {
-        // <Route path="/sources" exact><Sources/></Route>
+        // <Route path="/about" exact><Sources/></Route>
         }
         <Route><NotFound/></Route>
       </Switch>
