@@ -15,10 +15,10 @@ import Skills from '../Skills';
 import Sources from '../Sources';
 import NotFound from '../NotFound';
 import Projets from '../Projets';
-import './_reset.css';
+import './styles/_reset.css';
 import './app.scss';
-import './index.scss';
-import './app.js'
+import './styles/index.scss';
+import './styles/app.js'
 
 // ok : S'occuper de la nav selected
 // ok : Chercher un effet neige (ou etoiles) pour le background
