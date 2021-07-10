@@ -12,7 +12,9 @@ const Footer = () => (
         <a href="https://www.linkedin.com/in/nicolas-garilliere-4695b519b/" target="_blank" rel="noreferrer" className="logo"><FaLinkedin/></a>
         <a href="mailto:nicolas.nithoam@gmail.com" target="_blank" rel="noreferrer" className="logo"><FaMailBulk/></a>
         <a href="https://github.com/Nithoam" target="_blank" rel="noreferrer" className="logo"><FaGithub/></a>
-        <Link to="/about"  className="logo"><FaInfoCircle/></Link>
+        {
+          // <Link to="/about"  className="logo"><FaInfoCircle/></Link>
+        }
 
       </div>
     </footer>

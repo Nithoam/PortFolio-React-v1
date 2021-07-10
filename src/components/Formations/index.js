@@ -1,5 +1,6 @@
 import React from 'react';
 
+import '../App/styles/index.scss'
 import './formations.scss';
 
 const Formations = () => (
@@ -8,9 +9,11 @@ const Formations = () => (
       <h2 className="formations-title">2021 - Formation Développeur web</h2>
       <h3 className="formations-subtitle">O’clock, Labellisée Grand Ecole du Numérique</h3>
       <div className="formations-description">
-        <p>- 3 mois de Socle : HTML/CSS/Javascript/PHP/MySQL</p>
-        <p>- 1 mois de Spécialisation : React.js</p>
-        <p>- 1 mois de projet</p>
+        <ul>
+          <li>- 3 mois de Socle : HTML/CSS/Javascript/PHP/MySQL</li>
+          <li>- 1 mois de Spécialisation : React.js</li>
+          <li>- 1 mois de projet</li>
+        </ul>
       </div>
     </div>
 

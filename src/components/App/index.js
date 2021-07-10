@@ -24,8 +24,9 @@ import './styles/app.js'
 // ok : Chercher un effet neige (ou etoiles) pour le background
 // ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
 // ok : S'occuper de la home
+// ok : Composant Expérience
 
-// TODO : Composants Expériences et Compétences
+// TODO : Composant Compétences
 // TODO : Header : créer une barre rouge lorsque la fonction est désactivée
 // TODO : Composant Projets : import caroussel (https://github.com/sag1v/react-elastic-carousel) 
 

@@ -44,14 +44,41 @@ body {
     min-height:45vh;
   }
 }
-/* 
-  // or you can import your own font
-  @font-face {
-    font-family: 'Roboto';
-    src: url('../assets/fonts/Roboto-Regular.ttf');
+.formations, .experience{
+  &-title{
+    font-weight: bold;
+    text-decoration: underline;
+    @media (min-width:600px){
+      font-size:1.3rem
+    }
+    @media (min-width:1000px){
+      font-size:1.8rem
+    }
   }
-
-  body {
-    font-family: 'Roboto', sans-serif;
+  &-subtitle{
+    text-align: center;
+    margin:0.5rem auto;
+    font-size: 0.85rem;
+    font-style: italic;
+    @media (min-width:600px){
+      font-size:1.1rem;
+      margin:0.8rem auto;
+    }
+    @media (min-width:1000px){
+      font-size:1.3rem;
+      margin:0.9rem auto;
+    }
   }
-*/
+  &-description{
+    margin-bottom: 2rem;
+    font-size:0.75rem;
+    @media (min-width:600px){
+      font-size:1rem;
+      margin:0.8rem auto;
+    }
+    @media (min-width:1000px){
+      font-size:1.1rem;
+      margin:1rem auto;
+    }
+  }
+}
