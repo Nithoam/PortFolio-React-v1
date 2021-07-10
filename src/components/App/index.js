@@ -22,6 +22,7 @@ import './styles/app.js'
 
 // ok : S'occuper de la nav selected
 // ok : Chercher un effet neige (ou etoiles) pour le background
+// ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
 // ok : S'occuper de la home
 
 // TODO : Composants Expériences et Compétences
@@ -29,13 +30,12 @@ import './styles/app.js'
 // TODO : Composant Projets : import caroussel (https://github.com/sag1v/react-elastic-carousel) 
 
 // TODO : Composant Sources : Importer une photo de github et réactiver Sources (ainsi que son icone de lien dans le footer)
-// TODO : Composant About: Créer un composant About et modifier le lien dans la page Home
+// TODO : Composant Sources : Créer un composant About et modifier le lien dans le footer (icone i)
 
 // TODO : App : Reactiver la fonction Sun avec le theme light
 // TODO : App : Enlever le curseur sur mobile
 // TODO : Composant NotFound : S'occuper de la fonction random ET du tableau de la page Not Found
 
-// ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
 
 // == Composant
 const App = () => {
@@ -67,7 +67,7 @@ const App = () => {
         <Route path="/experiences" exact><Experiences /></Route>
         <Route path="/projets" exact><Projets /></Route>
         {
-        // <Route path="/about" exact><Sources/></Route>
+          // <Route path="/about" exact><Sources/></Route>
         }
         <Route><NotFound/></Route>
       </Switch>

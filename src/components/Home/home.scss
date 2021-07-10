@@ -19,7 +19,7 @@
         width:200px;
         height:200px;
         &:hover{
-            border-color:  rgba(1, 201, 201, 0.959);
+            border: solid 5px rgba(1, 201, 201, 0.959);
         }
         @media (min-width:600px) {
             margin:3rem auto;
