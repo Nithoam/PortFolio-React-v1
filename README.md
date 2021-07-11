@@ -36,6 +36,10 @@ La v2 sera accompagné de l'onglet projet (avec une magnifique carousel), d'une 
 
 Actuellement mise en ligne via la plateform surge à cette adresse : http://nicolas-garilliere.surge.sh/
 
+## 404 ##
+
+La gestion de la 404 existe sur ce projet mais n'est pas supporté par surge.sh, ceci sera corrigé lors de la mise en ligne définitive du projet sur un serveur personel
+
 ## /!\ Le footer /!\
 
 J'attire votre attention sur le footer, vous pouvez retrouver dedans, un lien vers mon github, un lien vers mon email, un lien avec mon linkdn ainsi qu'une redirection avec deux liens : celui du github de ce projet ainsi que de mon CV au format PDF
