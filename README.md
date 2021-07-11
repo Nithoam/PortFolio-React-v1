@@ -1,7 +1,7 @@
 [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
 # Bienvenue sur mon portfolio v1!
 
-Il s'agit de la première version de mon portfolion réalisé avec React.js !
+Il s'agit de la première version de mon portfolio réalisé avec React.js !
 
 ## Qui suis-je?
 
