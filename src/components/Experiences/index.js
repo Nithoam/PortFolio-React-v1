@@ -9,10 +9,10 @@ const Experiences = () => (
       <h3 className="experience-title">2019-2020 - Vendeur Adjoint Micromania</h3>
       <p className="experience-subtitle">Accompagnement de mes supérieurs hiérarchiques, dans la gestion du magasin Micromania Beaugrenelle (top 20 national)</p>
       <ul className="experience-list">
-        <li>-Réceptions des livraisons</li>
-        <li>-Gestions des stocks</li>
-        <li>-Merchandising</li>
-        <li>-Recrutements</li>
+        <li>- Réceptions des livraisons</li>
+        <li>- Gestions des stocks</li>
+        <li>- Merchandising</li>
+        <li>- Recrutements</li>
       </ul>
     </div>
 
@@ -20,9 +20,9 @@ const Experiences = () => (
       <h3 className="experience-title">2016-2019 - Vendeur/Préparateur Micromania</h3>
       <p className="experience-subtitle">Magasin Micromania Défense 2 (magasin top 3 national)</p>
       <ul className="experience-list">
-        <li>-Prise en charge de la clientèle</li>
-        <li>-Surveillance de la surface de vente</li>
-        <li>-Gestions des stocks</li>
+        <li>- Prise en charge de la clientèle</li>
+        <li>- Surveillance de la surface de vente</li>
+        <li>- Gestions des stocks</li>
       </ul>
     </div>
 
