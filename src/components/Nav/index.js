@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom'
 import './nav.scss'
 
 const Nav = () => {
-
   return(
     <nav className="nav">
       <NavLink className="nav__link" activeClassName="nav__link--selected" to="/formations">Formations</NavLink>

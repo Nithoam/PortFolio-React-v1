@@ -24,10 +24,25 @@ body {
   min-width: 320px;
   width:99vw;
   font-family: sans-serif;
-  background: vars.$midnight;
-  color: vars.$cream;
   overflow-x: hidden;
 }
+.moon{
+  background: vars.$midnight;
+  color: vars.$cream;
+}
+.sun{
+  background: vars.$ice;
+  color: vars.$black;
+}
+hr.moon{
+  border: solid 1px vars.$cream;
+  margin:1rem auto
+}
+hr.sun{
+  border: solid 1px vars.$black;
+  margin:1rem auto
+}
+
 .main-component{
   display:flex;
   align-items: center;

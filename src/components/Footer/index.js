@@ -6,7 +6,7 @@ import './footer.scss';
 
 const Footer = () => (
   <>
-    <hr/>
+    <hr className="footer-separation"/>
     <footer className="footer">
       <div className="logos">
         <a href="https://www.linkedin.com/in/nicolas-garilliere-4695b519b/" target="_blank" rel="noreferrer" className="logo"><FaLinkedin/></a>

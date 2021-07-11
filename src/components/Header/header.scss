@@ -34,9 +34,14 @@
     padding:1.5em 1em;
     width:3em;
     height:3em;
-    background-image: url('./moon.svg');
     border-radius:50%;
     box-shadow: 5px 5px 20px lightgrey;
+    &-moon{
+      background-image: url('./moon.svg');
+    }
+    &-sun{
+     background-color: yellow;
+    }
   }
 }
 .monoton-letters{

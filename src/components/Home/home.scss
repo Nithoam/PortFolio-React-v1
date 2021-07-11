@@ -18,9 +18,11 @@
         background: url('./photo.jpg') no-repeat center center ;
         width:200px;
         height:200px;
+        /*
         &:hover{
             border: solid 5px rgba(1, 201, 201, 0.959);
         }
+        */
         @media (min-width:600px) {
             margin:3rem auto;
         }

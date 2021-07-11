@@ -12,7 +12,7 @@ import Footer from '../Footer';
 import Formations from '../Formations';
 import Experiences from '../Experiences';
 import Skills from '../Skills';
-import Sources from '../Sources';
+// import Sources from '../Sources';
 import NotFound from '../NotFound';
 import Projets from '../Projets';
 import './styles/_reset.css';
@@ -40,26 +40,34 @@ import './styles/app.js'
 
 // == Composant
 const App = () => {
-// const location = useLocation();
   const [snow, setSnow] = useState(true);
 
-  // const [sun, setSun] = useState(false);
+  const [sun, setSun] = useState(false);
 
   const snowing = () =>{
     setSnow(!snow)
   };
-/*
+
   const sunning = () =>{
     setSun(!sun)
   };
-*/
-  
+
+  const body = document.querySelector('body');
+
+  if (sun){
+    body.classList.remove('moon')
+    body.classList.add('sun')
+
+  } else {
+    body.classList.remove('sun')
+    body.classList.add('moon')
+  }
 
   return(
     <>
     {snow && <Snow />}
     <div className="app">
-      <Header snow={snow} snowing={snowing} /* sun={sun} sunning={sunning} */ />
+      <Header snow={snow} snowing={snowing}  sun={sun} sunning={sunning}  />
       <Nav />
       <Switch>
         <Route path="/" exact><Home /></Route>
