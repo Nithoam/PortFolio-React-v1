@@ -1,6 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import './home.scss';
 
 const Home = () => (
