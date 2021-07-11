@@ -36,7 +36,7 @@ const Experiences = () => (
 
     <div className="experience">
       <h3 className="experience-title">juil.2015 &#38; juil.2016 - Façonneur</h3>
-      <p className="experience-subtitle">Remplacement saisonnier</p>
+      <p className="experience-subtitle">E-center Malakoff - Remplacement saisonnier</p>
       <ul className="experience-description">
         <li>- Réalisation de livres photos</li>
         <li>- Mise en cartons des commandes professionnelles</li>

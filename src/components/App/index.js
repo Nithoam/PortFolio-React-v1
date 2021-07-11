@@ -25,6 +25,7 @@ import './styles/app.js'
 // ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
 // ok : S'occuper de la home
 // ok : Composant Expérience
+// ok : App : Reactiver la fonction Sun avec le theme light
 
 // TODO : Composant Compétences
 // TODO : Header : créer une barre rouge lorsque la fonction est désactivée
@@ -33,31 +34,36 @@ import './styles/app.js'
 // TODO : Composant Sources : Importer une photo de github et réactiver Sources (ainsi que son icone de lien dans le footer)
 // TODO : Composant Sources : Créer un composant About et modifier le lien dans le footer (icone i)
 
-// TODO : App : Reactiver la fonction Sun avec le theme light
-// TODO : App : Enlever le curseur sur mobile
 // TODO : Composant NotFound : S'occuper de la fonction random ET du tableau de la page Not Found
 
 
 // == Composant
 const App = () => {
+  
+  /*
+  activate or stop snow ! fonction toggle
+  */
   const [snow, setSnow] = useState(true);
-
-  const [sun, setSun] = useState(false);
 
   const snowing = () =>{
     setSnow(!snow)
   };
+  
+  
+  /*
+  dark/light mode
+  */
+
+  const [sun, setSun] = useState(false);
 
   const sunning = () =>{
     setSun(!sun)
   };
 
   const body = document.querySelector('body');
-
   if (sun){
     body.classList.remove('moon')
     body.classList.add('sun')
-
   } else {
     body.classList.remove('sun')
     body.classList.add('moon')

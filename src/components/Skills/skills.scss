@@ -1,0 +1,25 @@
+.skills{
+    display:flex;
+    flex-direction: column;
+    &-pro{
+        margin-bottom:2rem;
+        &-front{
+            margin: 0.5rem auto 2rem auto;
+        }
+    }
+    &-perso{
+        margin-bottom:2rem;
+    }
+    &-title{
+        margin-bottom:0.5rem;
+        font-size:1.5rem;
+        font-weight:bold;
+        text-decoration: underline;
+    }
+    &-subtitle{
+        margin-bottom:0.5rem;
+        font-size:1.2rem;
+        text-decoration: underline;
+    }
+}
+

@@ -4,18 +4,27 @@ import { NavLink } from 'react-router-dom'
 import './header.scss';
 
 const Header = ({snow , snowing, sun, sunning}) => {
+  /*
+    button snow : activate/desactivate
+  */ 
   const handleChangeSnow = () => {
     snowing();
   }
   
+  /*
+   button dark/light mode
+  */
   const handleChangeSun = () => {
     sunning();
   }
   
+  // Pressed buttons effect
   const snowButton = snow ? "button button-pushed" : "button";
   const sunButton = sun ? "button sun-pushed" : "button";
 
+  // Change moon and sun
   const logo = sun ? " header__logo header__logo-sun " : " header__logo header__logo-moon"
+  
   return(
     <>
       <div className="buttons">

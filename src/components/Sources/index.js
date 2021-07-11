@@ -1,5 +1,5 @@
 import React from 'react';
-import CV from './grandCV.png';
+import CV from './CV.png';
 import './sources.scss';
 
 const Sources = () => {
