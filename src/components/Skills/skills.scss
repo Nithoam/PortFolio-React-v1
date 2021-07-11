@@ -4,8 +4,8 @@
     &-pro{
         margin-bottom:2rem;
         &-front{
-            margin: 0.5rem auto 2rem auto;
-        }
+            margin: 0.5rem auto 0.5rem auto;
+        }  
     }
     &-perso{
         margin-bottom:2rem;
@@ -20,6 +20,9 @@
         margin-bottom:0.5rem;
         font-size:1.2rem;
         text-decoration: underline;
+    }
+    &-list-front li, &-list-back li, &-list-softskills li, &-list-languages li{
+        margin-bottom: 0.3rem;
     }
 }
 
