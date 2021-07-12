@@ -4,7 +4,7 @@ import React from 'react';
 import './snow.scss';
 
 const Snow = () => {
-  const viewbow = `0 0 900 1080`;
+  const viewbow = `0 0 900 450`;
   return(
     <div className="snow">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox={viewbow} preserveAspectRatio="xMidYMax slice">

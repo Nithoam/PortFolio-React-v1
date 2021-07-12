@@ -5,10 +5,10 @@
   left:0
 }
 .button{
-  margin-right:0.2rem;
+  margin-right:0.5rem;
   padding:auto;
-  height:1.5rem;
-  width:1.5rem;
+  height:1.7rem;
+  width:1.7rem;
   border-radius: 50%;
   background-color:vars.$cream;
 
@@ -21,13 +21,14 @@
   margin:-0.1rem -0.5rem;
 }
 
+
 .header {
   display:flex;
   justify-content: space-around;
   text-align:center;
   align-items: center;
   padding-bottom:1rem;
-  min-height:10vh;
+  min-height:20vh;
   width:100%;
   &__logo{ /* Logo N */   /* ! penser à l'eclipse => orange */
     font-size:2em;

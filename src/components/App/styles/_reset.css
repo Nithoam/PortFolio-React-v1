@@ -150,7 +150,7 @@ a {
 
 label,
 button {
-  cursor: pointer;
+  cursor: none;
 }
 
 input,

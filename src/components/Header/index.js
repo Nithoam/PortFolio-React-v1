@@ -44,7 +44,7 @@ const Header = ({snow , snowing, sun, sunning}) => {
             <span className="monoton-letters">N</span>
           </div>
         </div>
-        <h2 className="job">Developpeur Web</h2>
+        <h2 className="job">Developpeur React</h2>
       </header>
       <hr className="header-separation"/>
     </>
