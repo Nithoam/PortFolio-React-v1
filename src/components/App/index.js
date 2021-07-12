@@ -20,23 +20,6 @@ import './app.scss';
 import './styles/index.scss';
 import './styles/app.js'
 
-// ok : S'occuper de la nav selected
-// ok : Chercher un effet neige (ou etoiles) pour le background
-// ok : Fonction activé/désactivé la neige (créer un state snow/setSnow = true et une fonction () => { setSnow: !snow})
-// ok : S'occuper de la home
-// ok : Composant Expérience
-// ok : App : Reactiver la fonction Sun avec le theme light
-
-// TODO : Composant Compétences
-// TODO : Header : créer une barre rouge lorsque la fonction est désactivée
-// TODO : Composant Projets : import caroussel (https://github.com/sag1v/react-elastic-carousel) 
-
-// TODO : Composant Sources : Importer une photo de github et réactiver Sources (ainsi que son icone de lien dans le footer)
-// TODO : Composant Sources : Créer un composant About et modifier le lien dans le footer (icone i)
-
-// TODO : Composant NotFound : S'occuper de la fonction random ET du tableau de la page Not Found
-
-
 // == Composant
 const App = () => {
   
