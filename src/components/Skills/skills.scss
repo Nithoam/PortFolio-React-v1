@@ -44,9 +44,14 @@
 @media (min-width:1000px){
     .skills-pro-front  li:hover {
         transform: translateX(-50px);
+        transition: 1s;
     }
     .skills-pro-back  li:hover {
         transform: translateX(50px);
+        transition: 1s;
     }
+}
+.none{
+    display:none;
 }
 

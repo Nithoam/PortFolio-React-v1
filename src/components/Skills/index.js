@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './skills.scss';
 
 const Skills = () => (
@@ -11,7 +10,7 @@ const Skills = () => (
         <div className="skills-pro-front">
           <h4 className="skills-subtitle">Front-end</h4>
           <ul className="skills-list-front">
-            <li>REACT</li>
+            <li>REACT </li>
             <li>JAVASCRIPT</li>
             <li>HTML</li>
             <li>CSS/SASS</li>
@@ -47,5 +46,6 @@ const Skills = () => (
     
   </div>
 );
+
 
 export default Skills;
