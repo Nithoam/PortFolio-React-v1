@@ -63,12 +63,14 @@ hr.sun{
   line-height: 110%;
   &-title{
     font-weight: bold;
-    margin-bottom:2rem;
+    margin-bottom:1.2rem;
     @media (min-width:600px){
-      font-size:1.3rem
+      font-size:1.3rem;
+      margin-bottom:1.3rem;
     }
     @media (min-width:1000px){
-      font-size:1.8rem
+      font-size:1.8rem;
+      margin-bottom:1.5rem;
     }
   }
   &-subtitle{
