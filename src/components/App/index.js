@@ -64,9 +64,6 @@ const App = () => {
         <Route path="/formations" exact><Formations /></Route>
         <Route path="/experiences" exact><Experiences /></Route>
         <Route path="/projets" exact><Projets /></Route>
-        {
-          // <Route path="/about" exact><Sources/></Route>
-        }
         <Route><NotFound/></Route>
       </Switch>
       <Footer />
