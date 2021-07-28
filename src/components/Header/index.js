@@ -38,7 +38,7 @@ const Header = ({snow , snowing, sun, sunning}) => {
         }
       </div>
       <header className="header">
-        <h1 className='name'> <span className="monoton-letters">N</span>icolas <span className="monoton-letters">G</span>arilliere</h1>
+        <h1 className='name'> <span className="monoton-letters">N</span>icolas Garilliere</h1>
         <div className={logo}>
           <div className="logo__circle">
             <span className="monoton-letters">N</span>

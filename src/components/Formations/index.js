@@ -18,7 +18,7 @@ const Formations = () => (
     </div>
 
     <div className="formation">
-      <h2 className="formations-title">2014 - BACCALAUREAT Scientifique</h2>
+      <h2 className="formations-title">2014 - Baccalaureat Scientifique</h2>
       <h3 className="formations-subtitle"> Lycée Sainte Géneviève – Paris VI </h3>
       <div className="formations-description">
         <p>Spécialité Science et Vie de la Terre</p>

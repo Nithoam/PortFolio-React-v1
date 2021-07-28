@@ -60,9 +60,9 @@ hr.sun{
   }
 }
 .formations, .experience{
+  line-height: 110%;
   &-title{
     font-weight: bold;
-    text-decoration: underline;
     @media (min-width:600px){
       font-size:1.3rem
     }

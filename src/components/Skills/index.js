@@ -7,22 +7,24 @@ const Skills = () => (
     <div className="skills-pro">
       
       <h3 className="skills-title">Hard skills</h3>
-      <div className="skills-pro-front">
-        <h4 className="skills-subtitle">Front-end</h4>
-        <ul className="skills-list-front">
-          <li>React</li>
-          <li>Javascript</li>
-          <li>HTML</li>
-          <li>CSS/SASS</li>
-        </ul>
-      </div>
-      
-      <div className="skills-pro-back">
-        <h4 className="skills-subtitle">Back-end</h4>
-        <ul className="skills-list-back">
-          <li>PHP</li>
-          <li>SQL</li>
-        </ul>
+      <div className="skills-responsive">
+        <div className="skills-pro-front">
+          <h4 className="skills-subtitle">Front-end</h4>
+          <ul className="skills-list-front">
+            <li>REACT</li>
+            <li>JAVASCRIPT</li>
+            <li>HTML</li>
+            <li>CSS/SASS</li>
+          </ul>
+        </div>
+        
+        <div className="skills-pro-back">
+          <h4 className="skills-subtitle">Back-end</h4>
+          <ul className="skills-list-back">
+            <li>PHP</li>
+            <li>SQL</li>
+          </ul>
+        </div>
       </div>
     </div>   
 
@@ -31,7 +33,6 @@ const Skills = () => (
       <ul className="skills-list-softskills">
         <li>Capacité d’adaptation et apprentissage rapide</li>
         <li>Capacité d’analyse et de remise en question</li>
-        <li>Communications verticales et horizontales</li>
         <li>Aisance orale</li>
       </ul>
     </div>
