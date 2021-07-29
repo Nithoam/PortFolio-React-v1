@@ -11,7 +11,7 @@ import Nav from '../Nav';
 import Footer from '../Footer';
 import Formations from '../Formations';
 import Skills from '../Skills';
-// import Sources from '../Sources';
+import Experiences from '../Experiences';
 import NotFound from '../NotFound';
 import Projets from '../Projets';
 import './styles/_reset.css';
@@ -61,7 +61,7 @@ const App = () => {
         <Route path="/" exact><Home /></Route>
         <Route path="/competences" exact><Skills /></Route>
         <Route path="/formations" exact><Formations /></Route>
-        {/* <Route path="/experiences" exact><Experiences /></Route> */}
+        <Route path="/experiences" exact><Experiences /></Route>
         <Route path="/projets" exact><Projets /></Route>
         <Route><NotFound/></Route>
       </Switch>

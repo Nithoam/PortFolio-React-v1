@@ -1,46 +1,20 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import Carousel from "react-elastic-carousel";
-import Item from "./Item";
-import "./experiences.css";
+import React from 'react';
+import Carousal from '3d-react-carousal'
 
-const breakPoints = [
-  { width: 1, itemsToShow: 1 },
-  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
-  { width: 768, itemsToShow: 3 },
-  { width: 1200, itemsToShow: 4 }
-];
+var Carousel = require( '3d-react-carousal').Carousel;
 
-function Experiences() {
-  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+const Experiences = () => {
+  console.log(Carousal)
 
-  const addItem = () => {
-    const nextItem = Math.max(1, items.length + 1);
-    setItems([...items, nextItem]);
-  };
-
-  const removeItem = () => {
-    const endRange = Math.max(0, items.length - 1);
-    setItems(items.slice(0, endRange));
-  };
-
+  let slides = [
+    <img  src="https://picsum.photos/800/300/?random" alt="1" /> ,
+    <img  src="https://picsum.photos/800/301/?random" alt="2" />  ,
+    <img  src="https://picsum.photos/800/302/?random" alt="3" />  , 
+    <img  src="https://picsum.photos/800/303/?random" alt="4" />  ,
+    <img  src="https://picsum.photos/800/304/?random" alt="5" /> ] ;
   return (
-    <div className="App">
-      <div className="controls-wrapper">
-        <button onClick={removeItem}>Remove Item</button>
-        <button onClick={addItem}>Add Item</button>
-      </div>
-      <hr className="seperator" />
-      <div className="carousel-wrapper">
-        <Carousel breakPoints={breakPoints}>
-          {items.map((item) => (
-            <Item key={item}>{item}</Item>
-          ))}
-        </Carousel>
-      </div>
-    </div>
+    <Carousel slides={slides} autoplay={true} interval={1000}/>
   );
 }
 
-const rootElement = document.getElementById("app");
-ReactDOM.render(<Experiences />, rootElement);
+export default Experiences;
