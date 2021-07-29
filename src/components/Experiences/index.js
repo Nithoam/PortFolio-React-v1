@@ -1,50 +1,46 @@
-import React from 'react';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
+import Carousel from "react-elastic-carousel";
+import Item from "./Item";
+import "./experiences.css";
 
-import '../App/styles/index.scss'
-import './experiences.scss';
+const breakPoints = [
+  { width: 1, itemsToShow: 1 },
+  { width: 550, itemsToShow: 2, itemsToScroll: 2 },
+  { width: 768, itemsToShow: 3 },
+  { width: 1200, itemsToShow: 4 }
+];
 
-const Experiences = () => (
-  <div className="experiences main-component">
-    <div className="experience">
-      <h3 className="experience-title">[2019-2020] - Vendeur Adjoint Micromania</h3>
-      <p className="experience-subtitle">Accompagnement de mes supérieurs hiérarchiques, dans la gestion du magasin Micromania Beaugrenelle (top 20 national)</p>
-      <ul className="experience-list">
-        <li>- Réceptions des livraisons</li>
-        <li>- Gestions des stocks</li>
-        <li>- Merchandising</li>
-        <li>- Recrutements</li>
-      </ul>
+function Experiences() {
+  const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+
+  const addItem = () => {
+    const nextItem = Math.max(1, items.length + 1);
+    setItems([...items, nextItem]);
+  };
+
+  const removeItem = () => {
+    const endRange = Math.max(0, items.length - 1);
+    setItems(items.slice(0, endRange));
+  };
+
+  return (
+    <div className="App">
+      <div className="controls-wrapper">
+        <button onClick={removeItem}>Remove Item</button>
+        <button onClick={addItem}>Add Item</button>
+      </div>
+      <hr className="seperator" />
+      <div className="carousel-wrapper">
+        <Carousel breakPoints={breakPoints}>
+          {items.map((item) => (
+            <Item key={item}>{item}</Item>
+          ))}
+        </Carousel>
+      </div>
     </div>
+  );
+}
 
-    <div className="experience">
-      <h3 className="experience-title">[2016-2019] - Vendeur/Préparateur Micromania</h3>
-      <p className="experience-subtitle">Magasin Micromania Défense 2 (magasin top 3 national)</p>
-      <ul className="experience-list">
-        <li>- Prise en charge de la clientèle</li>
-        <li>- Surveillance de la surface de vente</li>
-        <li>- Gestions des stocks</li>
-      </ul>
-    </div>
-
-    <div className="experience">
-      <h3 className="experience-title">[2015-2016] - Employé polyvalent KFC</h3>
-      <p className="experience-subtitle">Cuisinier au KFC de Paris Alésia (Paris XIV)</p>
-      <ul className="experience-list">
-        <li>Production des différentes commandes lié à l'activité du restaurant</li>
-      </ul>
-    </div>
-
-    <div className="experience">
-      <h3 className="experience-title">[juil.2015 &#38; juil.2016] - Façonneur</h3>
-      <p className="experience-subtitle">E-center Malakoff - Remplacement saisonnier</p>
-      <ul className="experience-description">
-        <li>- Réalisation de livres photos</li>
-        <li>- Mise en cartons des commandes professionnelles</li>
-        <li>- Expédition des commandes personnelles</li>
-      </ul>
-    </div>
-
-  </div>
-);
-
-export default Experiences;
+const rootElement = document.getElementById("app");
+ReactDOM.render(<Experiences />, rootElement);
