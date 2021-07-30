@@ -30,7 +30,6 @@ Il vous suffit de cliquer sur le petit soleil ou la petite lune en haut à gauch
 ### Améliorations concrètes 
 
 La v2 sera accompagné de l'onglet projet (avec une magnifique carrousel), d'une plus grande intéractivé sur l'onglet compétences ainsi qu'un bouton cliquable sur le home (en lieu et place de ma photo)
-Choix d'une police plus personnelle pour les différents caractères
 
 ## Visibilité en ligne
 
@@ -38,7 +37,7 @@ Actuellement mise en ligne via la plateform surge à cette adresse : http://nico
 
 ## 404 ##
 
-La gestion de la 404 existe sur ce projet mais n'est pas supporté par surge.sh, ceci sera corrigé lors de la mise en ligne définitive du projet sur un serveur personel
+La page 404 est en place :) 
 
 ## /!\ Le footer /!\
 
