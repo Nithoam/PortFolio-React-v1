@@ -1,7 +1,10 @@
 .experiences{
     margin:auto;
-    margin-top:5rem;
+    margin-top:2rem;
     min-height: 50vh;
+    @media (min-width:1000px){
+        margin-top:4rem;
+        }
 }
 .experience{
     line-height: 110%;
@@ -11,22 +14,29 @@
     justify-content: center;
     align-items: center;
     &-logo{
-        width:125px;
+        width:75px;
         padding-bottom:1rem;
+        @media (min-width:600px){
+            width:100px;
+        }
+        @media (min-width:1000px){
+            width:125px;
+        }
     }
     &-time{
         margin-bottom:1rem
     }
     &-title{
         font-weight: bold;
-        margin-bottom:1.2rem;
+        margin-bottom:1rem;
+        font-size:0.85rem;
         @media (min-width:600px){
             font-size:1.3rem;
-            margin-bottom:1.7rem;
+            margin-bottom:1.5rem;
         }
         @media (min-width:1000px){
             font-size:1.8rem;
-            margin-bottom:2.5rem;
+            margin-bottom:2rem;
         }
     }
     &-subtitle{
@@ -45,7 +55,7 @@
     }
     &-list{
         margin-bottom: 2rem;
-        font-size:0.75rem;
+        font-size:0.75rem;  
         @media (min-width:600px){
         font-size:1rem;
         margin:0.8rem auto;
@@ -58,11 +68,14 @@
     }
     &-description{
         font-size:0.75rem;
+        padding-left:1.5rem;
         @media (min-width:600px){
             font-size:1rem;
+            padding-left:0
         }
         @media (min-width:1000px){
             font-size:1.2rem;
+            padding-left:0
         }
     }
 }
@@ -95,4 +108,7 @@
 }
 .react-3d-carousel .slider-container .slider-content .slider-single .slider-single-content{
     box-shadow: 0px 0px 0px !important;
+}
+.react-3d-carousel .slider-container .slider-right, .react-3d-carousel .slider-container .slider-left {
+    cursor: none !important;
 }

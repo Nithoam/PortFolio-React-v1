@@ -50,15 +50,15 @@ const Experiences = () => {
       <div className="experience-time">[2015-2016]</div>
       <h3 className="experience-title">Employé polyvalent KFC</h3>
       <p className="experience-subtitle">Cuisinier KFC (Paris XIV)</p>
-      <p className="experience-list">Production des différentes commandes lié à l'activité du restaurant</p>
+      <p className="experience-description">Production des différentes commandes lié à l'activité du restaurant</p>
     </div> 
     , 
     <div className="experience">
       <img className="experience-logo" src={logoECenter} alt="logo E-Center" />
       <div className="experience-time">[juil.2015 &#38; juil.2016]</div>
       <h3 className="experience-title">Façonneur</h3>
-      <p className="experience-subtitle">E-center Malakoff - Remplacement saisonnier</p>
-      <ul className="experience-list">
+      <p className="experience-subtitle">E-center Malakoff  Remplacement saisonnier</p>
+      <ul className="experience-description">
         <li>- Réalisation de livres photos</li>
         <li>- Mise en cartons des commandes professionnelles</li>
         <li>- Expédition des commandes personnelles</li>
