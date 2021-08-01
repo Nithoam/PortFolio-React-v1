@@ -10,7 +10,7 @@ const Skills = () => (
         <div className="skills-pro-front">
           <h4 className="skills-subtitle">Front-end</h4>
           <ul className="skills-list-front">
-            <li>REACT </li>
+            <li><progress className="skills-progress" id="file" max="100" value="70"> 70% </progress> REACT </li>
             <li>JAVASCRIPT</li>
             <li>HTML</li>
             <li>CSS/SASS</li>
