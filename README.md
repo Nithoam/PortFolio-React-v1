@@ -37,7 +37,7 @@ Actuellement mise en ligne via la plateform surge à cette adresse : http://nico
 
 ## 404 ##
 
-La page 404 est en place mais devrait évolué d'ici peu avec ... un petit peu de dynamisme ;)
+La page 404 est en place mais devrait évoluer d'ici peu avec ... un petit peu de dynamisme ;)
 
 ## /!\ Le footer /!\
 
