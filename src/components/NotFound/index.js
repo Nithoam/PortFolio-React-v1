@@ -4,31 +4,35 @@ import './notfound.scss'
 
 const NotFound = () => {
   
-  const sentences = {
-    1: {
-      text:"Not Found",
-      class:"base"
+  const sentences = [
+    {
+      content:"Not Found",
+     // class:"base"
     },
-    2: {
-      text:"Cette page a été ensevellie par une tempête de neige",
-      class: "storm",
+    {
+      content:"Cette page a été ensevellie par une tempête de neige",
+      // class: "storm",
     },
-    3: {
-      text: "Vous avez du vous tromper de piste",
-      class: "ski"
+    {
+      content: "Vous avez dû vous tromper de piste",
+     // class: "ski"
+    },
+    {
+      content: "Le terrible yeti des neiges à ingéré cette page",
+     // class: "yeti"
     }
+  ]
   
+  const getRandomInt = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  /*
-  const getRandomInt = () => {
-    var random = Math.floor(Math.random() * sentences.length);
-    return random
-  }
-*/
+  let random = getRandomInt(0, sentences.length - 1);
+  
+  console.log(random)
   return(
-    <div className="not-found">
-      <p>4<FaSnowflake/>4</p>
-      <p className={sentences[1].class}>{sentences[1].text}</p>
+    <div className="notFound">
+      <p className="notFound-fixContent">4<FaSnowflake/>4</p>
+      <p className="notFound-randomContent" /*className={sentences[random].class}*/>{sentences[random].content}</p>
     </div>
   );
   }
