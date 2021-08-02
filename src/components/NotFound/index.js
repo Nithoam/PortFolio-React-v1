@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaSnowflake } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import './notfound.scss'
 
 const NotFound = () => {
@@ -31,7 +32,7 @@ const NotFound = () => {
   console.log(random)
   return(
     <div className="notFound">
-      <p className="notFound-fixContent">4<FaSnowflake/>4</p>
+      <p className="notFound-fixContent">4<Link to="/"><FaSnowflake/></Link>4</p>
       <p className="notFound-randomContent" /*className={sentences[random].class}*/>{sentences[random].content}</p>
     </div>
   );
