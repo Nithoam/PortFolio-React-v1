@@ -18,7 +18,7 @@ const NotFound = () => {
      // class: "ski"
     },
     {
-      content: "Le terrible yeti a surement ingéré cette page",
+      content: "Le terrible yéti a surement ingéré cette page",
      // class: "yeti"
     }
   ]
