@@ -1,0 +1,94 @@
+.projets{
+    margin:auto;
+    margin-top:2rem;
+    min-height: 50vh;
+    @media (min-width:1000px){
+        margin-top:4rem;
+    }
+}
+.projet{
+    line-height: 110%;
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 110%;
+    margin-bottom:1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &-figure{
+        
+    }
+    &-logo{
+        width:75px;
+        padding:0.2rem;
+        //background-color: white;
+        @media (min-width:600px){
+            width:100px;
+        }
+        @media (min-width:1000px){
+            width:125px;
+        }
+    }
+    &-title{
+        font-weight: bold;
+        margin:1rem 0;
+        font-size:0.85rem;
+        @media (min-width:600px){
+            font-size:1.3rem;
+            margin-bottom:1.5rem;
+        }
+        @media (min-width:1000px){
+            font-size:1.8rem;
+            margin-bottom:2rem;
+        }
+    }
+    &-subtitle{
+        text-align: center;
+        margin:0.5rem auto;
+        font-size: 0.85rem;
+        font-style: italic;
+        @media (min-width:600px){
+        font-size:1.1rem;
+        margin:0.8rem auto;
+        }
+        @media (min-width:1000px){
+        font-size:1.3rem;
+        margin:0.9rem auto;
+        }
+    }
+    &-list{
+        margin-bottom: 2rem;
+        font-size:0.75rem;  
+        @media (min-width:600px){
+        font-size:1rem;
+        margin:0.8rem auto;
+        }
+        @media (min-width:1000px){
+        line-height: 150%;
+        font-size:1.2rem;
+        margin:1rem auto;
+        }
+    }
+    &-description, &-lien{
+        line-height: 125%;
+        font-size:0.75rem;
+        text-align: center;
+        @media (min-width:600px){
+            font-size:1rem;
+            padding-left:0
+        }
+        @media (min-width:1000px){
+            font-size:1.2rem;
+            padding-left:0
+        }
+    }
+    &-lien{
+        margin-top:1rem;
+        text-decoration: underline;
+    }
+}

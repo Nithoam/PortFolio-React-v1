@@ -3,12 +3,14 @@ import './experiences.scss';
 import logoMM from './logoMM.png';
 import logoKFC from './logoKFC.png';
 import logoECenter from './logoEcenter.png';
+import logoMaestra from '../App/maestra-logo.png';
 
 const Carousel = require( '3d-react-carousal').Carousel;
 
 const Experiences = () => {
   let slides = [
     <div className="experience">
+      <img className="experience-logo" src={logoMaestra} alt="logo Maestra" />
       <div className="experience-time">[Juillet 2021]</div>
       <h3 className="experience-title">Maestra</h3>
       <p className="experience-subtitle">Projet de groupe de fin de formation : Création d'un site sur les pilules contraceptives</p>

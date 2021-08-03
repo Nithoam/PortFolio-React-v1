@@ -15,7 +15,7 @@ const NotFound = () => {
       // class: "storm",
     },
     {
-      content: "Vous avez dû vous tromper de piste",
+      content: "Vous avez dû vous tromper de piste, faites demi-tour ! ",
      // class: "ski"
     },
     {
@@ -27,6 +27,7 @@ const NotFound = () => {
   const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
+  
   let random = getRandomInt(0, sentences.length - 1);
   
   console.log(random)

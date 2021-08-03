@@ -1,11 +1,38 @@
 import React from 'react';
 
 import './projets.scss';
-
-const Projets = () => (
-  <div className="projets main-component">
-    <p> En cours de conception</p>
-  </div>
-);
+import maestralogo from '../App/maestra-logo.png'
+const Carousel = require( '3d-react-carousal').Carousel;
+const Projets = () => {
+  let slides = [
+    <div className="projet">
+      <img src={maestralogo} alt="" className="projet-logo"></img> 
+      <h3 className="projet-title">Maestra</h3> 
+      <figure className="projet-figure">
+        <img src="" alt="" className="projet-figure-picture"></img>
+      </figure> 
+      {/* <p className="projet-description">
+        Maestra est une site d'information, sur les pilules contraceptives, réalisé en trois sprints d'une semaine chacun, par un groupe de cinq élèves d'Oclock
+      </p>  */}
+      <p className="projet-description"> Retrouvez la présentation du projet Vendredi 9 Août, en direct, sur Youtube !</p>
+      <a className="projet-lien"  target="__blank" href="https://www.youtube.com/watch?v=1qlGlKTmlxk" noreferrer> Lien vers la présentation </a>
+    </div>
+    ,
+    <div className="projet">
+      <img src={maestralogo} alt="" className="projet-logo"></img> 
+      <h3 className="projet-title">Maestra</h3> 
+      <figure className="projet-figure">
+        <img src="" alt="" className="projet-figure-picture"></img>
+      </figure> 
+      <p className="projet-description"> Retrouvez la présentation du projet Vendredi 9 Août, en direct, sur Youtube !</p>
+      <a href="https://www.youtube.com/watch?v=1qlGlKTmlxk" target="__blank" noreferrer> Lien vers la présentation </a>
+    </div>
+  ]
+  return (
+    <div className="projets">
+      <Carousel slides={slides} autoplay={false} interval={1000}/>
+    </div>
+  );
+}
 
 export default Projets;
