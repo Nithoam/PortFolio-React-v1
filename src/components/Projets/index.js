@@ -15,7 +15,7 @@ const Projets = () => {
         Maestra est une site d'information, sur les pilules contraceptives, réalisé en trois sprints d'une semaine chacun, par un groupe de cinq élèves d'Oclock
       </p>  */}
       <p className="projet-description"> Retrouvez la présentation du projet Vendredi 6 Août, en direct, sur Youtube !</p>
-      <a className="projet-lien"  target="__blank" href="https://www.youtube.com/watch?v=1qlGlKTmlxk" noreferrer> Lien vers la présentation </a>
+      <a className="projet-lien"  target="__blank" href="https://www.youtube.com/watch?v=kuLnRV0llGc" noreferrer> Lien vers la présentation </a>
     </div>
     ,
     <div className="projet">
@@ -25,7 +25,7 @@ const Projets = () => {
         <img src="" alt="" className="projet-figure-picture"></img>
       </figure> 
       <p className="projet-description"> Retrouvez la présentation du projet Vendredi 6 Août, en direct, sur Youtube !</p>
-      <a className="projet-lien"  target="__blank" href="https://www.youtube.com/watch?v=1qlGlKTmlxk" noreferrer> Lien vers la présentation </a>
+      <a className="projet-lien"  target="__blank" href="https://www.youtube.com/watch?v=kuLnRV0llGc" noreferrer> Lien vers la présentation </a>
     </div>
   ]
   return (
