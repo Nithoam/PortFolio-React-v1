@@ -4,7 +4,7 @@
     min-height: 50vh;
     @media (min-width:1000px){
         margin-top:4rem;
-        }
+    }
 }
 .experience{
     line-height: 110%;
@@ -66,7 +66,7 @@
         margin:1rem auto;
         }
     }
-    &-description{
+    &-description, &-github{
         line-height: 125%;
         font-size:0.75rem;
         text-align: center;
@@ -77,6 +77,12 @@
         @media (min-width:1000px){
             font-size:1.2rem;
             padding-left:0
+        }
+    }
+    &-github{
+        margin:1rem 0;
+        @media (min-width:1000px){
+            margin:2rem 0;
         }
     }
 }

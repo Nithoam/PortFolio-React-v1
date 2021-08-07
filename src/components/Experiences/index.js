@@ -1,5 +1,6 @@
 import React from 'react';
 import './experiences.scss';
+import {FaGithub} from 'react-icons/fa'
 import logoMM from './logoMM.png';
 import logoKFC from './logoKFC.png';
 import logoECenter from './logoEcenter.png';
@@ -13,13 +14,14 @@ const Experiences = () => {
       <img className="experience-logo" src={logoMaestra} alt="logo Maestra" />
       <div className="experience-time">[Juillet 2021]</div>
       <h3 className="experience-title">Maestra</h3>
-      <p className="experience-subtitle">Projet de groupe de fin de formation : Création d'un site sur les pilules contraceptives</p>
+      <p className="experience-subtitle">Projet, en groupe, de fin de formation : Création d'un site sur les pilules contraceptives</p>
       <ul className="experience-list">
         <li>- Developpement front du site, en React.js </li>
         <li>- Rôle de scrum master</li>
         <li>- Tenu du journal de bord du groupe</li>
-        <li>- Présentation orale, sur Youtube, du projet</li>
+        <li>- Présentation orale, <a className="projet-lien"  target="__blank" href="https://www.youtube.com/watch?v=2jhWvM-egUA" noreferrer="true" >sur Youtube</a>, du projet</li>
       </ul>
+      <a href="https://github.com/Nithoam/Maestra-front" target="__blank" className="experience-github" noreferrer="true" ><FaGithub/> Retrouver le code du projet, sur Github</a>
     </div>
     ,
     <div className="experience">
