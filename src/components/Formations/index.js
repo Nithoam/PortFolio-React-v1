@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 
 import '../App/styles/index.scss'
 import './formations.scss';
@@ -12,7 +13,7 @@ const Formations = () => (
         <ul>
           <li>- 3 mois de Socle : HTML/CSS/Javascript/PHP/MySQL</li>
           <li>- 1 mois de Spécialisation : React.js</li>
-          <li>- 1 mois de projet</li>
+          <li>- 1 mois de projet : <Link to="/projets">Maestra</Link></li>
         </ul>
       </div>
     </div>

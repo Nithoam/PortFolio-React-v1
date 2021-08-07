@@ -8,8 +8,8 @@ import maestralogo from '../App/maestra-logo.png'
 const Carousel = require( '3d-react-carousal').Carousel;
 const Projets = () => {
   let slides = [
-    <div className="projet">
-      <img src={maestralogo} alt="" className="projet-logo"></img> 
+    <div className="projet" id="projet-maestra">
+      <img src={maestralogo} alt="logo Maestra" className="projet-logo"></img> 
       <h3 className="projet-title">Maestra</h3> 
       <figure className="projet-figure">
         <img src="" alt="" className="projet-figure-picture"></img>
