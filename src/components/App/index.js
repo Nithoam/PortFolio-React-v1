@@ -1,6 +1,6 @@
 // == Import npm
 import React, { useState } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 
 
 // == Import
@@ -57,14 +57,14 @@ const App = () => {
     <div className="app">
       <Header snow={snow} snowing={snowing}  sun={sun} sunning={sunning}  />
       <Nav />
-      <Switch>
-        <Route path="/" exact><Home /></Route>
-        <Route path="/competences" exact><Skills /></Route>
-        <Route path="/formations" exact><Formations /></Route>
-        <Route path="/experiences" exact><Experiences /></Route>
-        <Route path="/projets" exact><Projets /></Route>
-        <Route><NotFound/></Route>
-      </Switch>
+      <Routes>
+        <Route path="/" exact element={<Home />}/>
+        <Route path="/competences" exact element={<Skills />}/>
+        <Route path="/formations" exact element={<Formations />}/>
+        <Route path="/experiences" exact element={<Experiences />}/>
+        <Route path="/projets" exact element={<Projets />}/>
+        <Route element={<NotFound />}/>
+      </Routes>
       <Footer />
     </div>
     </>
